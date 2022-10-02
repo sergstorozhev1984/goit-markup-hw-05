@@ -401,8 +401,6 @@ address {
 
 .social-list-icon {
   fill: var(--primery-text-color);
-  transition: fill var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
-  /* background-color var(--transition-dur-and-func); */
 }
 
 .social-list-link:hover,
@@ -412,8 +410,8 @@ address {
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-  background-color: var(--accent-color);
   fill: var(--primary-white-color);
+  transition: fill var(--transition-dur-and-func);
 }
 
 /* Clients */
@@ -507,7 +505,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 .join .social-list-link {
@@ -551,14 +549,9 @@ address {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: #f5f4fa;
+  transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
 }
-
-/* .selected-filter {
-  color: var(--primary-white-color);
-  background: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-} */
 
 .filters-list-btn:hover,
 .filters-list-btn:focus {
@@ -579,7 +572,9 @@ address {
 .projects-list-item {
   flex-basis: calc((100% - 60px) / 3);
   background: var(--primary-white-color);
+  transition: box-shadow var(--transition-dur-and-func);
 }
+
 .projects-list-item:hover,
 .projects-list-item:focus {
   cursor: pointer;
