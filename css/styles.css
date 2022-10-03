@@ -401,6 +401,7 @@ address {
 
 .social-list-icon {
   fill: var(--primery-text-color);
+  transition: fill var(--transition-dur-and-func);
 }
 
 .social-list-link:hover,
@@ -411,7 +412,6 @@ address {
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: var(--primary-white-color);
-  transition: fill var(--transition-dur-and-func);
 }
 
 /* Clients */
